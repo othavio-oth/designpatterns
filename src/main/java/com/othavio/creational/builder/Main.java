@@ -2,14 +2,13 @@ package com.othavio.creational.builder;
 
 import java.time.LocalDate;
 
-import com.othavio.creational.builder.builders.PersonBuilder;
 import com.othavio.creational.builder.model.Person;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Person person = new PersonBuilder().name("John Doe")
+        Person person = new Person.PersonBuilder().name("John Doe")
                 .birthDate(LocalDate.of(1990, 1, 1))
                 .phoneNumber("555-555-5555")
                 .email("myemail@me.com")
